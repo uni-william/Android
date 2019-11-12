@@ -10,6 +10,16 @@
         android:name="com.example.vender.features.publish.PublishFragment"
         tools:layout="@layout/fragment_publish">
 
+        <action
+            android:id="@+id/nav_to_confirmation"
+            app:destination="@+id/confirmation_id"
+            />
+
     </fragment>
+
+    <dialog
+        android:id="@+id/confirmation_id"
+        android:name="com.example.vender.features.publish.ConfirmationFragment"
+        />
 
 </navigation>
